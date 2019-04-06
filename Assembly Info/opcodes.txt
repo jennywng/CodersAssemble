@@ -1,0 +1,57 @@
+Data Movement:
+mov D, S Move source to destination
+push S Push source onto stack
+pop S Pop top of stack
+
+Unary Operations:
+inc D Increment by 1
+dec D Decrement by 1
+neg D Arithmetic negation
+not D Bitwise complement
+
+Binary Operations:
+leaq D, S Load effective address of source into destination
+add D, S Add source to destination
+sub D, S Subtract source from destination
+imul D, S Multiply destination by source
+xor D, S Bitwise XOR destination by source
+or D, S Bitwise OR destination by source
+and D, S Bitwise AND destination by source
+
+Shift Operations:
+shl D, k Left shift destination by k bits
+shr D, k Logical right shift destination by k bits
+
+Comparison and Test Instructions:
+cmp S1, S2 Set condition codes by comparing S1 and S2
+
+Jump Instructions:
+jmp Label Jump to label
+je / jz Label Jump if equal/zero ZF
+jne / jnz Label Jump if not equal/nonzero
+js Label Jump if negative SF
+jns Label Jump if nonnegative
+jg / jnle Label Jump if greater (signed)
+jge / jnl Label Jump if greater or equal (signed)
+jl / jnge Label Jump if less (signed)
+jle / jng Label Jump if less or equal
+ja / jnbe Label Jump if above (unsigned)
+jae / jnb Label Jump if above or equal (unsigned)
+jb / jnae Label Jump if below (unsigned) CF 189
+jbe / jna Label Jump if below or equal (unsigned) 
+
+Procedure Call Instructions:
+call Label Push return address and jump to label, return in rax
+ret Pop return address from stack from rax
+
+
+
+
+
+
+
+
+
+
+
+
