@@ -58,7 +58,7 @@ body {
 /* <!--------------------------------------------- Navbar ---------------------------------------------------> */
 
 #mainNav {
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(180, 180, 180);
   position: -webkit-sticky;
   position: sticky;
   top:0;
@@ -216,4 +216,6 @@ body {
       font-weight:600
   }
 }
+
+
 

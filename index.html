@@ -18,7 +18,11 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+<<<<<<< Updated upstream
         <link rel="stylesheet" href="css/registers.css">
+=======
+        <link rel="stylesheet" href="css/codeeditor.css">
+>>>>>>> Stashed changes
         
         <link rel="stylesheet" href="css/footer-style.css">
 
@@ -167,9 +171,40 @@
                             </div>
                         </div>
                         <div class="card" id="script" style="width: 50rem;">
-                            <div class="card-body">
                                 <h5 class="card-title">Script</h5>
+                                <div class="code-editor">	
+                                    <span class="control"></span>
+                                    <span class="control"></span>
+                                    <span class="control"></span>
+                                    <pre class="line-numbers">
+                                        <code class="language-css">
+                                            body {
+                                                background: #e16a3f;
+                                            }
+                                            
+                                            .code-editor:before,
+                                            .code-editor:after,
+                                            .code-editor span.control:before,
+                                            .code-editor span.after:after {
+                                                box-sizing: border-box;
+                                                -moz-box-sizing: border-box;
+                                                -o-box-sizing: border-box;
+                                                -webkit-box-sizing: border-box;
+                                                content: '';
+                                                position: absolute;
+                                                z-index: 1;
+                                                -webkit-transition: all .5s ease-in-out;
+                                                -moz-transition: wall .5s ease-in-out;
+                                                -o-transition: all .5s ease-in-out;
+                                                transition: all .5s ease-in-out;
+                                            }
+                                        </code>
+                                    </pre>
+                                </div>
+                                    <button id = "run"> RUN </button>
+                                    
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -204,8 +239,9 @@
         <!-- ---------------scripts---------------- -->
         <!-- jquery and plugins-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         
-
+        <script src = "js/codeedit.js"></script>
         <!-- wow js -->
         <script src="js/wow.min.js"></script>
         <script>
@@ -220,6 +256,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <!-- my scripts -->
+        <script>
+        $("run").click(function() {
+            $(".block").animate({"left": "+=50px"}, "slow");
+        }
+        </script>
 
     </body>
 
