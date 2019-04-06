@@ -35,6 +35,33 @@ $("#sub-btn").click(function(){
 });
 
 
+$("#dec-btn").click(function(){
+    var add1 = $('#dec-input1').val();
+    console.log(add1);
+
+    var val1 = parseInt($("#" + add1 + "-val").text());
+    console.log(val1);
+
+    var sum = val1 - 1;
+    $("#" + add1 + "-val").hide();
+    $("#" + add1 + "-val").text(sum);
+    $("#" + add1 + "-val").fadeIn("slow");
+});
+
+
+$("#inc-btn").click(function(){
+    var add1 = $('#inc-input1').val();
+    console.log(add1);
+
+    var val1 = parseInt($("#" + add1 + "-val").text());
+    console.log(val1);
+
+    var sum = val1 + 1;
+    $("#" + add1 + "-val").hide();
+    $("#" + add1 + "-val").text(sum);
+    $("#" + add1 + "-val").fadeIn("slow");
+});
+
 
 // function push() {
 //     var value = document.getElementById("pushvalue").value;
