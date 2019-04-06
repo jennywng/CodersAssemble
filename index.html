@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/registers.css">
         
         <link rel="stylesheet" href="css/footer-style.css">
 
@@ -90,22 +91,22 @@
                             <div class="card-body">
                                 <h5 class="card-title">Registers</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">RAX</li>
-                                    <li class="list-group-item">RBX</li>
-                                    <li class="list-group-item">RCX</li>
-                                    <li class="list-group-item">RDX</li>
-                                    <li class="list-group-item">RSI</li>
-                                    <li class="list-group-item">RDI</li>
-                                    <li class="list-group-item">RBP</li>
-                                    <li class="list-group-item">RSP</li>
-                                    <li class="list-group-item">R8</li>
-                                    <li class="list-group-item">R9</li>
-                                    <li class="list-group-item">R10</li>
-                                    <li class="list-group-item">R11</li>
-                                    <li class="list-group-item">R12</li>
-                                    <li class="list-group-item">R13</li>
-                                    <li class="list-group-item">R14</li>
-                                    <li class="list-group-item">R15</li>
+                                    <li class="list-group-item ret-reg">RAX</li>
+                                    <li class="list-group-item callee-saved">RBX</li>
+                                    <li class="list-group-item param-reg">RCX</li>
+                                    <li class="list-group-item param-reg">RDX</li>
+                                    <li class="list-group-item param-reg">RSI</li>
+                                    <li class="list-group-item param-reg">RDI</li>
+                                    <li class="list-group-item base pointer">RBP</li>
+                                    <li class="list-group-item stack pointer">RSP</li>
+                                    <li class="list-group-item param-reg">R8</li>
+                                    <li class="list-group-item param-reg">R9</li>
+                                    <li class="list-group-item caller-saved">R10</li>
+                                    <li class="list-group-item caller-saved">R11</li>
+                                    <li class="list-group-item caller-saved">R12</li>
+                                    <li class="list-group-item caller-saved">R13</li>
+                                    <li class="list-group-item caller-saved">R14</li>
+                                    <li class="list-group-item caller-saved">R15</li>
                                 </ul>
                             </div>
                         </div>
@@ -135,22 +136,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-8">
                         <div class="card" id="commands" style="width: 50rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Commands</h5>
                                 <div class="row">
-                                    <div class="col-7">
-                                        <a class="btn">Push</a><input type="text" placeholder="Register (i.e. RAX)"><br>
-                                        <a class="btn">Pull</a><input type="text" placeholder="Register (i.e. RAX)"><br>
-                                        <a class="btn">Mov</a><input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
-                                        <a class="btn">Add</a><input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
-                                        <a class="btn">Sub</a><input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
-                                        <a class="btn">Inc</a><input type="text" placeholder="Register (i.e. RAX)"><br>
-                                        <a class="btn">Dec</a><input type="text" placeholder="Register (i.e. RAX)"><br>
-                                    </div>
                                     <div class="col-6">
+                                        <a class="btn">Push</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                        <a class="btn">Pull</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                        <a class="btn">Mov</a>  <input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
+                                        <a class="btn">Add</a>  <input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
+                                        <a class="btn">Sub</a>  <input type="text" placeholder="To register (i.e. RAX)"> <input type="text" placeholder="From register (i.e. RBX)"><br>
+                                        <a class="btn">Inc</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                        <a class="btn">Dec</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn" id="cmp-btn">Cmp</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                        <a class="btn">Je</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
+                                        <a class="btn">Jne</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
+                                        <a class="btn">Jg</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
+                                        <a class="btn">Jge</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
+                                        <a class="btn">Jl</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
+                                        <a class="btn">Jle</a>  <input type="text" placeholder="To register (i.e. RAX)"><br>
 
+
+                                        <a class="btn" id="call-btn">Call</a>  <input type="text" placeholder="Register (i.e. RAX)"><br>
+                                        <a class="btn" id="ret-btn">Ret</a>
                                     </div>
                                 </div>
                             </div>
