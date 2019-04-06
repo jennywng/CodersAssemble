@@ -46,10 +46,6 @@
 	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<script type="text/javascript" src="engine0/jquery.js"></script>
-	<!-- End WOWSlider.com HEAD section -->
-	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
-	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
 	<!-- End WOWSlider.com HEAD section --></head>
 
 
@@ -93,69 +89,6 @@
                 <h2>Tutorial</h2>
             </div>
         </section>
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container0">
-	<div class="ws_images"><ul>
-		<li><img src="data0/images/assembly.jpg" alt="x86-64 Assembly Tutorial" title="x86-64 Assembly Tutorial" id="wows0_0"/></li>
-		<li><img src="data0/images/assembly1.png" alt="" title="" id="wows0_1"/></li>
-		<li><img src="data0/images/assembly2.png" alt="" title="" id="wows0_2"/></li>
-		<li><img src="data0/images/register.jpg" alt="Registers" title="Registers" id="wows0_3"/></li>
-		<li><img src="data0/images/register1.png" alt="" title="" id="wows0_4"/></li>
-		<li><img src="data0/images/register2.png" alt="" title="" id="wows0_5"/></li>
-		<li><img src="data0/images/stack.jpg" alt="The Stack" title="The Stack" id="wows0_6"/></li>
-		<li><img src="data0/images/stack1.png" alt="" title="" id="wows0_7"/></li>
-		<li><img src="data0/images/stack2.png" alt="" title="" id="wows0_8"/></li>
-		<li><img src="data0/images/opcodes.jpg" alt="Opcodes" title="Opcodes" id="wows0_9"/></li>
-		<li><img src="data0/images/opcodes1.png" alt="" title="" id="wows0_10"/></li>
-		<li><img src="data0/images/opcodes2.png" alt="" title="" id="wows0_11"/></li>
-		<li><img src="data0/images/opcodes3.png" alt="" title="" id="wows0_12"/></li>
-		<li><img src="data0/images/opcodes4.png" alt="" title="" id="wows0_13"/></li>
-		<li><img src="data0/images/opcodes5.png" alt="" title="" id="wows0_14"/></li>
-		<li><img src="data0/images/opcodes6.png" alt="" title="" id="wows0_15"/></li>
-		<li><img src="data0/images/opcodes7.png" alt="" title="" id="wows0_16"/></li>
-		<li><img src="data0/images/opcodes8.png" alt="" title="" id="wows0_17"/></li>
-		<li><img src="data0/images/example.jpg" alt="Examples of x86-64 Assembly" title="Examples of x86-64 Assembly" id="wows0_18"/></li>
-		<li><img src="data0/images/example1.png" alt="Absolute Value" title="Absolute Value" id="wows0_19"/></li>
-		<li><img src="data0/images/example2.png" alt="Max" title="Max" id="wows0_20"/></li>
-		<li><img src="data0/images/sim.jpg" alt="The Simulation" title="The Simulation" id="wows0_21"/></li>
-		<li><img src="data0/images/sim1.png" alt="" title="" id="wows0_22"/></li>
-		<li><img src="data0/images/sim2.png" alt="" title="" id="wows0_23"/></li>
-		<li><a href="http://wowslider.net"><img src="data0/images/sim3.png" alt="javascript carousel" title="" id="wows0_24"/></a></li>
-		<li><img src="data0/images/sim4.png" alt="" title="" id="wows0_25"/></li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="x86-64 Assembly Tutorial"><span><img src="data0/tooltips/assembly.jpg" alt="x86-64 Assembly Tutorial"/>1</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/assembly1.png" alt=""/>2</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/assembly2.png" alt=""/>3</span></a>
-		<a href="#" title="Registers"><span><img src="data0/tooltips/register.jpg" alt="Registers"/>4</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/register1.png" alt=""/>5</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/register2.png" alt=""/>6</span></a>
-		<a href="#" title="The Stack"><span><img src="data0/tooltips/stack.jpg" alt="The Stack"/>7</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/stack1.png" alt=""/>8</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/stack2.png" alt=""/>9</span></a>
-		<a href="#" title="Opcodes"><span><img src="data0/tooltips/opcodes.jpg" alt="Opcodes"/>10</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes1.png" alt=""/>11</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes2.png" alt=""/>12</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes3.png" alt=""/>13</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes4.png" alt=""/>14</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes5.png" alt=""/>15</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes6.png" alt=""/>16</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes7.png" alt=""/>17</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/opcodes8.png" alt=""/>18</span></a>
-		<a href="#" title="Examples of x86-64 Assembly"><span><img src="data0/tooltips/example.jpg" alt="Examples of x86-64 Assembly"/>19</span></a>
-		<a href="#" title="Absolute Value"><span><img src="data0/tooltips/example1.png" alt="Absolute Value"/>20</span></a>
-		<a href="#" title="Max"><span><img src="data0/tooltips/example2.png" alt="Max"/>21</span></a>
-		<a href="#" title="The Simulation"><span><img src="data0/tooltips/sim.jpg" alt="The Simulation"/>22</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/sim1.png" alt=""/>23</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/sim2.png" alt=""/>24</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/sim3.png" alt=""/>25</span></a>
-		<a href="#" title=""><span><img src="data0/tooltips/sim4.png" alt=""/>26</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image slider</a> by WOWSlider.com v8.8m</div>
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine0/wowslider.js"></script>
-	<script type="text/javascript" src="engine0/script.js"></script>
-	<!-- End WOWSlider.com BODY section -->
 
         <footer class="site-footer">
 
