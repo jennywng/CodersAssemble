@@ -88,32 +88,32 @@
             <div class="game-container">
                 <div class="row">
                     <div class="col-2" id="registers">
-                        <div class="card">
+                        <div class="card card-reg">
                             <div class="card-body">
                                 <h5 class="card-title">Registers</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item ret-reg">RAX</li>
-                                    <li class="list-group-item callee-saved">RBX</li>
-                                    <li class="list-group-item param-reg">RCX</li>
-                                    <li class="list-group-item param-reg">RDX</li>
-                                    <li class="list-group-item param-reg">RSI</li>
-                                    <li class="list-group-item param-reg">RDI</li>
-                                    <li class="list-group-item base pointer">RBP</li>
-                                    <li class="list-group-item stack pointer">RSP</li>
-                                    <li class="list-group-item param-reg">R8</li>
-                                    <li class="list-group-item param-reg">R9</li>
-                                    <li class="list-group-item caller-saved">R10</li>
-                                    <li class="list-group-item caller-saved">R11</li>
-                                    <li class="list-group-item caller-saved">R12</li>
-                                    <li class="list-group-item caller-saved">R13</li>
-                                    <li class="list-group-item caller-saved">R14</li>
-                                    <li class="list-group-item caller-saved">R15</li>
+                                    <li class="list-group-item ret-reg" id="rax">RAX<span id="rax-val"></span></li>
+                                    <li class="list-group-item callee-saved" id="rbx">RBX</li>
+                                    <li class="list-group-item param-reg" id="rcx">RCX</li>
+                                    <li class="list-group-item param-reg" id="rdx">RDX</li>
+                                    <li class="list-group-item param-reg" id="rsi">RSI</li>
+                                    <li class="list-group-item param-reg" id="rdi">RDI</li>
+                                    <li class="list-group-item base-pointer" id="rbp">RBP</li>
+                                    <li class="list-group-item stack-pointer" id="rsp">RSP</li>
+                                    <li class="list-group-item param-reg" id="r8">R8</li>
+                                    <li class="list-group-item param-reg" id="r9">R9</li>
+                                    <li class="list-group-item caller-saved" id="r10">R10</li>
+                                    <li class="list-group-item caller-saved" id="r11">R11</li>
+                                    <li class="list-group-item caller-saved" id="r12">R12</li>
+                                    <li class="list-group-item caller-saved" id="r13">R13</li>
+                                    <li class="list-group-item caller-saved" id="r14">R14</li>
+                                    <li class="list-group-item caller-saved" id="r15">R15</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-2" id="stack">
-                        <div class="card">
+                        <div class="card card-shadow">
                             <div class="card-body">
                                 <h5 class="card-title">Stack</h5>
                                 <ul class="list-group list-group-flush">
