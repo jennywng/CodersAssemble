@@ -94,17 +94,17 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item ret-reg" id="rax">RAX: <span id="rax-val"></span></li>
                                     <li class="list-group-item callee-saved" id="rbx">RBX: <span id="rbx-val"></span></li>
-                                    <li class="list-group-item param-reg" id="rcx">RCX</li>
-                                    <li class="list-group-item param-reg" id="rdx">RDX</li>
-                                    <li class="list-group-item param-reg" id="rsi">RSI</li>
-                                    <li class="list-group-item param-reg" id="rdi">RDI</li>
-                                    <li class="list-group-item base-pointer" id="rbp">RBP</li>
-                                    <li class="list-group-item stack-pointer" id="rsp">RSP</li>
+                                    <li class="list-group-item param-reg" id="rcx">RCX: <span id="rcx-val"></span></li>
+                                    <li class="list-group-item param-reg" id="rdx">RDX: <span id="rdx-val"></span></li>
+                                    <li class="list-group-item param-reg" id="rsi">RSI: <span id="rsi-val"></span></li>
+                                    <li class="list-group-item param-reg" id="rdi">RDI: <span id="rdi-val"></span></li>
+                                    <li class="list-group-item base-pointer" id="rbp">RBP: <span id="rbp-val"></span></li>
+                                    <li class="list-group-item stack-pointer" id="rsp">RSP: <span id="rsp-val"></span></li>
                                     <li class="list-group-item param-reg" id="r8">R8: <span id="r8-val" value=400>400</span></li>
                                     <li class="list-group-item param-reg" id="r9">R9: <span id="r9-val" value=500>500</span></li>
                                     <li class="list-group-item caller-saved" id="r10">R10: <span id="r10-val"></span></li>
-                                    <li class="list-group-item caller-saved" id="r11">R11</li>
-                                    <li class="list-group-item caller-saved" id="r12">R12</li>
+                                    <li class="list-group-item caller-saved" id="r11">R11: <span id="r11-val"></span></li>
+                                    <li class="list-group-item caller-saved" id="r12">R12: <span id="r12-val"></span></li>
                                     <li class="list-group-item caller-saved" id="r13">R13</li>
                                     <li class="list-group-item caller-saved" id="r14">R14</li>
                                     <li class="list-group-item caller-saved" id="r15">R15</li>
@@ -174,19 +174,19 @@
                                     <span class="control"></span>
                                     <pre class="line-numbers">
                                         <code class="language-css">
-                                            product:
-                                                ; Standard Prologue: we do not have to create any local var
-                                                xor rax, rax		; zero out the return register
-                                                xor r10, r10		; zero out counter i
-                                            start:
-                                                cmp r10, rsi 		; does i == n?
-                                                je done 			; if so, we are done
-                                                add rax, rdi 		; add a[i] to rax
-                                                inc r10 			; increase counter i
-                                                jmp start			; we are done with this loop
-                                            done:
-                                                ; Standard epilogue: return value is already in rax, no callee-saved register
-                                                ret 
+product:
+    ; Standard Prologue: we do not have to create any local var
+    xor rax, rax		; zero out the return register
+    xor r10, r10		; zero out counter i
+start:
+    cmp r10, rsi 		; does i == n?
+    je done 			; if so, we are done
+    add rax, rdi 		; add a[i] to rax
+    inc r10 			; increase counter i
+    jmp start			; we are done with this loop
+done:
+    ; Standard epilogue: return value is already in rax, no callee-saved register
+    ret 
                                         </code>
                                     </pre>
                                 </div>
