@@ -1,1 +1,29 @@
+.ret-reg {
+    background-color: #ffa0d2;
+}
 
+
+.callee-saved {
+    background-color: #c952af;
+    color: white;
+}
+
+.param-reg {
+    background-color: #7c277b;
+    color: white;
+}
+
+.base-pointer {
+    background-color: #ffb7dc;
+    color: white;
+}
+
+.stack-pointer {
+    background-color: #542653;
+    color: white;
+}
+
+.caller-saved {
+    background-color: #77349b;
+    color: white;
+}
