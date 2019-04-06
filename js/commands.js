@@ -1,11 +1,6 @@
 
 
 $("#add-btn").click(function(){
-    var $r9_val = parseInt($('#r9-val').text);
-    console.log(typeof($r9_val));
-    var $r8_val = parseInt($('#r8-val').text);
-    console.log(typeof($r8_val));
-
     var add1 = $('#add-input1').val();
     var add2 = $('#add-input2').val();
     console.log(add1);
@@ -23,16 +18,20 @@ $("#add-btn").click(function(){
 });
 
 $("#sub-btn").click(function(){
-    var $r9_val = parseInt($('#r9-val').text);
-    console.log(typeof($r9_val));
-    var $r8_val = parseInt($('#r8-val').text);
-    console.log(typeof($r8_val));
-    var sum = $r9_val - $r8_val;
-    console.log(typeof(sum));
-    console.log(sum);
-    $('#r8-val').hide();
-    $('#r8-val').text(sum);
-    $('#r8-val').fadeIn("slow");
+    var add1 = $('#sub-input1').val();
+    var add2 = $('#sub-input2').val();
+    console.log(add1);
+    console.log(add2);
+
+    var val1 = parseInt($("#" + add1 + "-val").text());
+    var val2 = parseInt($("#" + add2 + "-val").text());
+    console.log(val1);
+    console.log(val2);
+
+    var sum = val1 - val2;
+    $("#" + add1 + "-val").hide();
+    $("#" + add1 + "-val").text(sum);
+    $("#" + add1 + "-val").fadeIn("slow");
 });
 
 
