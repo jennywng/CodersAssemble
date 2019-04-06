@@ -175,26 +175,21 @@
                                     <span class="control"></span>
                                     <pre class="line-numbers">
                                         <code class="language-css">
-                                            body {
-                                                background: #e16a3f;
-                                            }
+                                            product:
+                                                ; Standard Prologue: we do not have to create any local var
                                             
-                                            .code-editor:before,
-                                            .code-editor:after,
-                                            .code-editor span.control:before,
-                                            .code-editor span.after:after {
-                                                box-sizing: border-box;
-                                                -moz-box-sizing: border-box;
-                                                -o-box-sizing: border-box;
-                                                -webkit-box-sizing: border-box;
-                                                content: '';
-                                                position: absolute;
-                                                z-index: 1;
-                                                -webkit-transition: all .5s ease-in-out;
-                                                -moz-transition: wall .5s ease-in-out;
-                                                -o-transition: all .5s ease-in-out;
-                                                transition: all .5s ease-in-out;
-                                            }
+                                                ; subroutine body
+                                                xor rax, rax		; zero out the return register
+                                                xor r10, r10		; zero out counter i
+                                            start:
+                                                cmp r10, rsi 		; does i == n?
+                                                je done 			; if so, we are done
+                                                add rax, rdi 		; add a[i] to rax
+                                                inc r10 			; increase counter i
+                                                jmp start			; we are done with this loop
+                                            done:
+                                                ; Standard epilogue: return value is already in rax, no callee-saved register
+                                                ret 
                                         </code>
                                     </pre>
                                 </div>
