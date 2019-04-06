@@ -1,0 +1,17 @@
+Registers:
+rax: return register
+rbx: callee saved
+rcx: param 4
+rdx: param 3
+rsi: param 2
+rdi: param 1
+rbp: base pointer, callee saved
+rsp: stack pointer
+r8: param 5
+r9: param 6
+r10: caller saved
+r11: caller saved
+r12: callee saved
+r13: callee saved
+r14: callee saved
+r15: callee saved
